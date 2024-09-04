@@ -1,10 +1,13 @@
 {
+  "homepage": "http://nitishparihar.github.io/attractinterviews-main",
   "name": "attractinterviews",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
+    "predeploy": "npm run dev",
+    "deploy": "gh-pages -d buld",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
